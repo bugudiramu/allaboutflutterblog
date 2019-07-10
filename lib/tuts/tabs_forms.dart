@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 
 class TabsForms extends StatefulWidget {
@@ -57,7 +55,11 @@ class _TabsFormsState extends State<TabsForms> {
                 ),
                 Center(
                   // Dont forget to add the image path in pubspec.yaml file
-                  child: Image.asset("images/img1.png"),
+                  child: FadeInImage.assetNetwork(
+                    placeholder: 'images/giphy.gif',
+                    image:
+                        'https://mobile-di.com/wp-content/uploads/2018/08/flutter-review.jpeg',
+                  ),
                 ),
                 Center(
                   child: Image.asset("images/img2.png"),
