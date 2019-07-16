@@ -1,12 +1,11 @@
-// import 'package:allaboutflutterblog/tuts/showing_basic_widgets.dart';
-// import 'package:flutter/material.dart';
+import 'package:allaboutflutterblog/tuts/navigation.dart';
+import 'package:flutter/material.dart';
 
-// void main() {
-//   runApp(
-//     MaterialApp(
-//       home: ShowingBasicWidgets(),
-//       debugShowCheckedModeBanner: false,
-//     ),
-//   );
-// }
-
+void main() {
+  runApp(
+    MaterialApp(
+      home: FirstScreen(),
+      debugShowCheckedModeBanner: false,
+    ),
+  );
+}

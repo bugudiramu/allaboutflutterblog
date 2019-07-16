@@ -76,6 +76,7 @@ class _TabsFormsState extends State<TabsForms> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       // The TextFormField widget renders a material design text field and can display validation errors when they occur.
+
                       TextFormField(
                         // input type should be email type
                         keyboardType: TextInputType.emailAddress,
@@ -84,7 +85,7 @@ class _TabsFormsState extends State<TabsForms> {
                           if (val.isEmpty) {
                             return "Please provide Email";
                           }
-                          return null;
+                          return "";
                         },
                         controller: _emailController,
                         // When typing is completed we assign the text in the input field to val which is further checks for the validation
@@ -104,7 +105,7 @@ class _TabsFormsState extends State<TabsForms> {
                           } else if (val.length < 6) {
                             return "Password must be greater than 6 characters";
                           }
-                          return null;
+                          return "";
                         },
                         // places dots instead of characters the lettes when we are typing
                         obscureText: true,

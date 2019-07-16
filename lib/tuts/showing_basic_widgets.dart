@@ -6,6 +6,7 @@ class ShowingBasicWidgets extends StatelessWidget {
     // scaffold gives default structure of the app by giving appbar and body
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text("Basic widget example"),
       ),
       body: Padding(
@@ -22,7 +23,10 @@ class ShowingBasicWidgets extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 color: Colors.redAccent,
                 child: Center(
-                  child: Text("Container"),
+                  child: Text(
+                    "Container",
+                    style: _style(),
+                  ),
                 ),
               ),
               Padding(
@@ -32,7 +36,7 @@ class ShowingBasicWidgets extends StatelessWidget {
                 ),
               ),
               Text(
-                "Text-Widget: Showing Some Basic Widgets Example",
+                "Text-Widget-Ex: Showing Some Basic Widgets Example",
               ),
               Padding(
                 padding: const EdgeInsets.only(
@@ -49,7 +53,8 @@ class ShowingBasicWidgets extends StatelessWidget {
                     color: Colors.redAccent,
                     child: Center(
                       child: Text(
-                        "Row-Container",
+                        "Row",
+                        style: _style(),
                       ),
                     ),
                   ),
@@ -59,7 +64,8 @@ class ShowingBasicWidgets extends StatelessWidget {
                     color: Colors.blueAccent,
                     child: Center(
                       child: Text(
-                        "Row-Container",
+                        "Row",
+                        style: _style(),
                       ),
                     ),
                   ),
@@ -76,7 +82,8 @@ class ShowingBasicWidgets extends StatelessWidget {
                         color: Colors.redAccent,
                         child: Center(
                           child: Text(
-                            "Column-Container",
+                            "Column",
+                            style: _style(),
                           ),
                         ),
                       ),
@@ -86,7 +93,8 @@ class ShowingBasicWidgets extends StatelessWidget {
                         color: Colors.blueAccent,
                         child: Center(
                           child: Text(
-                            "Column-Container",
+                            "Column",
+                            style: _style(),
                           ),
                         ),
                       ),
@@ -114,6 +122,13 @@ class ShowingBasicWidgets extends StatelessWidget {
         child: Icon(Icons.add),
         onPressed: () {},
       ),
+    );
+  }
+
+  TextStyle _style() {
+    return TextStyle(
+      color: Colors.white,
+      fontWeight: FontWeight.bold,
     );
   }
 }
