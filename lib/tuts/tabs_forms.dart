@@ -84,6 +84,7 @@ class _TabsFormsState extends State<TabsForms> {
                           if (val.isEmpty) {
                             return "Please provide Email";
                           }
+                          return null;
                         },
                         controller: _emailController,
                         // When typing is completed we assign the text in the input field to val which is further checks for the validation
@@ -103,6 +104,7 @@ class _TabsFormsState extends State<TabsForms> {
                           } else if (val.length < 6) {
                             return "Password must be greater than 6 characters";
                           }
+                          return null;
                         },
                         // places dots instead of characters the lettes when we are typing
                         obscureText: true,
