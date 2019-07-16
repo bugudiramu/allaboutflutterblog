@@ -21,14 +21,24 @@ class ShowingBasicWidgets extends StatelessWidget {
                 width: 150.0,
                 padding: const EdgeInsets.all(8.0),
                 color: Colors.redAccent,
-                child: Center(child: Text("Container")),
+                child: Center(
+                  child: Text("Container"),
+                ),
               ),
               Padding(
-                padding: const EdgeInsets.only(bottom: 8.0, top: 8.0),
+                padding: const EdgeInsets.only(
+                  bottom: 8.0,
+                  top: 8.0,
+                ),
               ),
-              Text("Text-Widget: Showing Some Basic Widgets Example"),
+              Text(
+                "Text-Widget: Showing Some Basic Widgets Example",
+              ),
               Padding(
-                padding: const EdgeInsets.only(bottom: 8.0, top: 8.0),
+                padding: const EdgeInsets.only(
+                  bottom: 8.0,
+                  top: 8.0,
+                ),
               ),
               Row(
                 // Aligns all the widgets horizontally
@@ -37,18 +47,26 @@ class ShowingBasicWidgets extends StatelessWidget {
                     height: 100.0,
                     width: 100.0,
                     color: Colors.redAccent,
-                    child: Center(child: Text("Row-Container")),
+                    child: Center(
+                      child: Text(
+                        "Row-Container",
+                      ),
+                    ),
                   ),
                   Container(
                     height: 100.0,
                     width: 100.0,
                     color: Colors.blueAccent,
                     child: Center(
-                      child: Text("Row-Container"),
+                      child: Text(
+                        "Row-Container",
+                      ),
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(left: 20.0),
+                    padding: EdgeInsets.only(
+                      left: 20.0,
+                    ),
                   ),
                   Column(
                     children: <Widget>[
@@ -56,24 +74,37 @@ class ShowingBasicWidgets extends StatelessWidget {
                         height: 100.0,
                         width: 100.0,
                         color: Colors.redAccent,
-                        child: Center(child: Text("Column-Container")),
+                        child: Center(
+                          child: Text(
+                            "Column-Container",
+                          ),
+                        ),
                       ),
                       Container(
                         height: 100.0,
                         width: 100.0,
                         color: Colors.blueAccent,
-                        child: Center(child: Text("Column-Container")),
+                        child: Center(
+                          child: Text(
+                            "Column-Container",
+                          ),
+                        ),
                       ),
                     ],
                   )
                 ],
               ),
               Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text("Image"),
+                padding: const EdgeInsets.all(
+                  8.0,
+                ),
+                child: Text(
+                  "Image",
+                ),
               ),
               Image.asset(
-                'images/c7.jpg',fit: BoxFit.cover,
+                'images/c7.jpg',
+                fit: BoxFit.cover,
               ),
             ],
           ),
