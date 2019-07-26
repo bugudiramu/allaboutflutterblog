@@ -47,6 +47,7 @@ flutter:
     - images/img1.png
     - images/img2.png
     - images/giphy.gif
+    - images/google.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see
@@ -59,7 +60,7 @@ flutter:
   fonts:
     - family: Montserrat
       fonts:
-        - asset: fonts/montserrat/Montserrat-Regular.ttf
+        - asset: fonts/montserrat/Montserrat-Medium.ttf
           #       - asset: fonts/Schyler-Italic.ttf
           style: italic
   #   - family: Trajan Pro
